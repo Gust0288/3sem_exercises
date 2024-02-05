@@ -2,6 +2,7 @@ import { $, $$ } from "../utils/dom.js";
 
 
 
+
 const guess = $("p");
 const start = $("#start");
 const higher = $("#higher");
@@ -15,6 +16,10 @@ let max = 100;
 
 correct.addEventListener("click", ()=>{
     correctShow.textContent = "KORREKT!"
+    higher.disabled = true;
+    lower.disabled = true;
+    correct.disabled = true;
+    start.disabled = false;
 })
 
 function updateGuess() {
@@ -29,6 +34,7 @@ start.addEventListener("click", () => {
     higher.disabled = false;
     lower.disabled = false;
     correct.disabled = false;
+    correctShow.textContent = ""
 });
 
 higher.addEventListener("click", () => {

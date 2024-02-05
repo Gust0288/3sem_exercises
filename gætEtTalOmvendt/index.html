@@ -6,12 +6,46 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="start">Start</button>
-    <button id="higher" disabled>Højere</button>
-    <button id="lower" disabled>Lavere</button>
-    <button id="correct" disabled>Korrekt</button>
+    <div id="button-container">
+      <button id="start">Start</button>
+      <button id="higher" disabled>Højere</button>
+      <button id="lower" disabled>Lavere</button>
+      <button id="correct" disabled>Korrekt</button>
+    </div>
     <p></p>
     <h1></h1>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: blanchedalmond;
+      }
+      #start,
+      #higher,
+      #lower,
+      #correct {
+        width: 100px;
+        height: 50px;
+      }
+
+      #start {
+        background-color: red;
+      }
+      #higher {
+      }
+      #lower {
+      }
+      #correct {
+        background-color: green;
+      }
+      p {
+        font-size: 50px;
+      }
+    </style>
     <script type="module" src="js.js"></script>
   </body>
 </html>
