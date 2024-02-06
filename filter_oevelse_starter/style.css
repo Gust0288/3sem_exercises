@@ -1,0 +1,28 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
+
+li {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 2.5px;
+}
+
+button{
+    background-color: #aa0404;
+    border-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  width: 100%;
+}
+body{
+    background-color: bisque;
+}

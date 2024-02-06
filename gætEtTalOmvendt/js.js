@@ -14,6 +14,8 @@ const correctShow = $("h1");
 let min = 1;
 let max = 100;
 
+let numberOfGuesses = 0;
+
 correct.addEventListener("click", ()=>{
     correctShow.textContent = "KORREKT!"
     higher.disabled = true;
