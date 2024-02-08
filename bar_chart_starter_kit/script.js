@@ -1,29 +1,39 @@
 import { getRandomNumber } from "../utils/numbers.js";
 
-const chartArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+const chartArr = [];
 
 const list = document.querySelector("ul");
+setInterval(createChart, 1000);
 
-let currentIndex = 0;
-let elementsCount = 0;
+// "li tags i dommen skal udkommenteres!!" ----------------
+// function createChart(){
+//     const randomNumber = getRandomNumber(100);
+//     chartArr.push(randomNumber);
+//     console.log(chartArr)
+//     const li = document.createElement("li");
+//     li.style.setProperty("--height", randomNumber);
+//     list.appendChild(li);
+//     if(chartArr.length > 19){
+//         chartArr.shift();
+//         list.removeChild(list.firstChild);
+//     }
+// }
+// "li tags i dommen skal udkommenteres!!" -----------------
+
+
+// ------------ ForEach ------------------
 
 function createChart(){
-    // const numberOfArrEL = chartArr.length;
+    chartArr.push(getRandomNumber(100));
 
-    if(currentIndex < chartArr.length){
-    const randomNumber = getRandomNumber(100);
-    const li = document.createElement("li");
-    li.style.setProperty("--height", randomNumber);
-    list.appendChild(li);
-
-    currentIndex++;
-    elementsCount++;
-}else{
-    clearInterval(interval1)
-}
-console.log(`Antal charts: ${elementsCount}`)
+    document.querySelectorAll("li").forEach((li, i) => {
+        li.style.setProperty("--height", chartArr[i]);
+    });
+    if(chartArr.length > 20){
+        chartArr.shift();
+    }
 }
 
-const interval1 = setInterval(createChart, 1000);
+// ------------ ForEach -------------------------
 
 
