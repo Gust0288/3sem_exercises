@@ -8,13 +8,63 @@
   </head>
 
   <body>
-    <header class="header">UDSKIFTES</header>
-    <p>Content</p>
-    <div class="footer">UDSKIFTES</div>
+    <div class="header_content">
+      <header class="header">Robotten</header>
+      <select name="select" id="language">
+        <option id="danish" value="da" selected>Danish</option>
+        <option id="german" value="de">German</option>
+        <option id="english" value="en">English</option>
+      </select>
+    </div>
+    <div class="middle">
+      <p>
+        I en fjern fremtid levede en ensom robot ved navn R1-X. Dag efter dag
+        strejfede han gennem den forladte by, på jagt efter spor fra den længe
+        forsvundne menneskeheden. En dag stødte han på en mystisk besked, der
+        skulle ændre hans skæbne for evigt. Med beslutsomhed og nysgerrighed
+        begav han sig ud på rejsen for at afsløre hemmeligheden og bestemme sin
+        robotiske arts fremtid.
+      </p>
+    </div>
+    <div class="footer">Historien om Robotten</div>
 
-    <select name="Languages" id="Language">
-      <option id="danish" value="Danish">Danish</option>
-      <option id="german">German</option>
-    </select>
+    <style>
+      body {
+        margin: 0;
+      }
+      .header_content {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(129, 127, 255);
+        color: rgb(0, 0, 0);
+        border: solid black 2px;
+        padding: 20px;
+        margin: 10px 10px 0 10px;
+      }
+      .header {
+        font-size: 35px;
+        font-family: fantasy;
+      }
+      .middle {
+        background-color: aquamarine;
+        color: rgb(0, 0, 0);
+        border: solid black 2px;
+        padding: 20px;
+        margin: 10px 10px 0 10px;
+      }
+      .footer {
+        background-color: rgb(238, 149, 25);
+        color: rgb(0, 0, 0);
+        border: solid black 2px;
+        padding: 20px;
+        margin: 10px 10px 0 10px;
+        font-size: 15px;
+        font-family: fantasy;
+      }
+      p {
+        font-size: 25px;
+        font-family: fantasy;
+      }
+    </style>
   </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="js.js"></script>
+  </head>
+  <body>
+    <h2>Input Processor</h2>
+    <input type="text" id="input" placeholder="Enter input" />
+    <select id="option">
+      <option value="firstName">
+        If input is a first name: Make the first character in a name uppercase,
+        and the rest lowercase
+      </option>
+      <option value="fullName">
+        If input is a full name: Find the first name
+      </option>
+      <option value="fullNameLength">
+        If input is a full name: Find the length of the first name
+      </option>
+      <option value="middleName">
+        If input is a full name: Find the middle name start and end position,
+        and the middle name itself in a full name string
+      </option>
+      <option value="isPngOrJpg">
+        If input is a filename: Check if a filename is .png or .jpg
+      </option>
+      <option value="password">
+        If input is a password: Hide a password with the correct number of *s
+      </option>
+      <option value="thirdCharacterUppercase">
+        With any input: Make the third character uppercase
+      </option>
+      <option value="uppercaseAfterSpaceOrHyphen">
+        With any input: Make a character uppercase, if it follows a space or a
+        hyphen
+      </option>
+    </select>
+    <button>Process</button>
+    <div id="output">Output comes here!</div>
+
+    <style>
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      #output {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </body>
+</html>
