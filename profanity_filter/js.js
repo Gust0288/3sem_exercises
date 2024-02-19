@@ -8,9 +8,9 @@ const replaceButton = document.getElementById("replaceButton");
 
 
 replaceButton.addEventListener("click", () => {
-    const originalText = textElement.innerText;
+    const originalText = textElement.textContent; // can also use innerText instead of textContent, innerText will not take into account the styling and only takes the text plain.
     let newText = originalText;
-    let isSFW = false;
+    let isSFW = false; 
    
     
     curseWords.forEach((word) => {
