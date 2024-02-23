@@ -1,5 +1,8 @@
-const selector = document.querySelector("#selector");
-const bodyChanger = document.querySelector("body");
+import { $, $$} from "../utils/dom.js"
+
+
+const selector = $("#selector");
+const bodyChanger = $("body");
 
 // selector.addEventListener("change", () => {
 //     bodyChanger.dataset.theme = selector.value;
